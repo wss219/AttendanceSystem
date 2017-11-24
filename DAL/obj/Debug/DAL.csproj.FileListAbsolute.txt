@@ -1,0 +1,37 @@
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\DAL\bin\Debug\DAL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\DAL\bin\Debug\DAL.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\DAL\bin\Debug\Model.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\DAL\bin\Debug\Model.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\DAL\obj\Debug\DAL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\DAL\obj\Debug\DAL.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\DAL\bin\Debug\DAL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\DAL\bin\Debug\DAL.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\DAL\obj\Debug\DAL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\DAL\obj\Debug\DAL.pdb
+C:\Users\李岩\Desktop\三层架构考勤系统修改\DAL\bin\Debug\DAL.dll
+C:\Users\李岩\Desktop\三层架构考勤系统修改\DAL\bin\Debug\DAL.pdb
+C:\Users\李岩\Desktop\三层架构考勤系统修改\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\李岩\Desktop\三层架构考勤系统修改\DAL\obj\Debug\DAL.dll
+C:\Users\李岩\Desktop\三层架构考勤系统修改\DAL\obj\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统\DAL\bin\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统\DAL\bin\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\仗己丶\Desktop\考勤系统\DAL\obj\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统\DAL\obj\Debug\DAL.pdb
+C:\Users\李岩\Desktop\考勤系统2\DAL\bin\Debug\DAL.dll
+C:\Users\李岩\Desktop\考勤系统2\DAL\bin\Debug\DAL.pdb
+C:\Users\李岩\Desktop\考勤系统2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\李岩\Desktop\考勤系统2\DAL\obj\Debug\DAL.dll
+C:\Users\李岩\Desktop\考勤系统2\DAL\obj\Debug\DAL.pdb
+E:\ASP.NET\考勤系统\DAL\bin\Debug\DAL.dll
+E:\ASP.NET\考勤系统\DAL\bin\Debug\DAL.pdb
+E:\ASP.NET\考勤系统\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\ASP.NET\考勤系统\DAL\obj\Debug\DAL.dll
+E:\ASP.NET\考勤系统\DAL\obj\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\DAL\bin\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\DAL\bin\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\DAL\obj\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\DAL\obj\Debug\DAL.pdb

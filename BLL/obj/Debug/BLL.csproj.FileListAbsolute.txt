@@ -1,0 +1,65 @@
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\BLL\bin\Debug\BLL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\BLL\bin\Debug\BLL.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\BLL\bin\Debug\DAL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\BLL\bin\Debug\Model.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\BLL\bin\Debug\DAL.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\BLL\bin\Debug\Model.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\BLL\obj\Debug\BLL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\BLL\obj\Debug\BLL.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\BLL\bin\Debug\BLL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\BLL\bin\Debug\BLL.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\BLL\bin\Debug\DAL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\BLL\bin\Debug\DAL.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\BLL\obj\Debug\BLL.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统修改\BLL\obj\Debug\BLL.pdb
+C:\Users\李岩\Desktop\三层架构考勤系统修改\BLL\bin\Debug\BLL.dll
+C:\Users\李岩\Desktop\三层架构考勤系统修改\BLL\bin\Debug\BLL.pdb
+C:\Users\李岩\Desktop\三层架构考勤系统修改\BLL\bin\Debug\DAL.dll
+C:\Users\李岩\Desktop\三层架构考勤系统修改\BLL\bin\Debug\DAL.pdb
+C:\Users\李岩\Desktop\三层架构考勤系统修改\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\李岩\Desktop\三层架构考勤系统修改\BLL\obj\Debug\BLL.dll
+C:\Users\李岩\Desktop\三层架构考勤系统修改\BLL\obj\Debug\BLL.pdb
+C:\Users\仗己丶\Desktop\三层架构考勤系统修改\BLL\bin\Debug\BLL.dll
+C:\Users\仗己丶\Desktop\三层架构考勤系统修改\BLL\bin\Debug\BLL.pdb
+C:\Users\仗己丶\Desktop\三层架构考勤系统修改\BLL\bin\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\三层架构考勤系统修改\BLL\bin\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\三层架构考勤系统修改\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\仗己丶\Desktop\三层架构考勤系统修改\BLL\obj\Debug\BLL.dll
+C:\Users\仗己丶\Desktop\三层架构考勤系统修改\BLL\obj\Debug\BLL.pdb
+C:\Users\宝宝\Desktop\my Csharp\考勤系统\BLL\bin\Debug\BLL.dll
+C:\Users\宝宝\Desktop\my Csharp\考勤系统\BLL\bin\Debug\BLL.pdb
+C:\Users\宝宝\Desktop\my Csharp\考勤系统\BLL\bin\Debug\DAL.dll
+C:\Users\宝宝\Desktop\my Csharp\考勤系统\BLL\bin\Debug\DAL.pdb
+C:\Users\宝宝\Desktop\my Csharp\考勤系统\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\宝宝\Desktop\my Csharp\考勤系统\BLL\obj\Debug\BLL.dll
+C:\Users\宝宝\Desktop\my Csharp\考勤系统\BLL\obj\Debug\BLL.pdb
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\BLL\bin\Debug\BLL.dll
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\BLL\bin\Debug\BLL.pdb
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\BLL\bin\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\BLL\bin\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\BLL\obj\Debug\BLL.dll
+C:\Users\仗己丶\Desktop\考勤系统 - 副本\BLL\obj\Debug\BLL.pdb
+C:\Users\仗己丶\Desktop\考勤系统\BLL\bin\Debug\BLL.dll
+C:\Users\仗己丶\Desktop\考勤系统\BLL\bin\Debug\BLL.pdb
+C:\Users\仗己丶\Desktop\考勤系统\BLL\bin\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统\BLL\bin\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\仗己丶\Desktop\考勤系统\BLL\obj\Debug\BLL.dll
+C:\Users\仗己丶\Desktop\考勤系统\BLL\obj\Debug\BLL.pdb
+C:\Users\李岩\Desktop\考勤系统2\BLL\bin\Debug\BLL.dll
+C:\Users\李岩\Desktop\考勤系统2\BLL\bin\Debug\BLL.pdb
+C:\Users\李岩\Desktop\考勤系统2\BLL\bin\Debug\DAL.dll
+C:\Users\李岩\Desktop\考勤系统2\BLL\bin\Debug\DAL.pdb
+C:\Users\李岩\Desktop\考勤系统2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\李岩\Desktop\考勤系统2\BLL\obj\Debug\BLL.dll
+C:\Users\李岩\Desktop\考勤系统2\BLL\obj\Debug\BLL.pdb
+E:\ASP.NET\考勤系统\BLL\bin\Debug\BLL.dll
+E:\ASP.NET\考勤系统\BLL\bin\Debug\BLL.pdb
+E:\ASP.NET\考勤系统\BLL\bin\Debug\DAL.dll
+E:\ASP.NET\考勤系统\BLL\bin\Debug\DAL.pdb
+E:\ASP.NET\考勤系统\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\ASP.NET\考勤系统\BLL\obj\Debug\BLL.dll
+E:\ASP.NET\考勤系统\BLL\obj\Debug\BLL.pdb

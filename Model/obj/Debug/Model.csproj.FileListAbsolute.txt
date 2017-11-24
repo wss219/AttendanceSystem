@@ -1,0 +1,4 @@
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\Model\bin\Debug\Model.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\Model\bin\Debug\Model.pdb
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\Model\obj\Debug\Model.dll
+E:\ASP.NET\AttendanceSystem\三层架构考勤系统\Model\obj\Debug\Model.pdb
