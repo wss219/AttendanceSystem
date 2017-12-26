@@ -17,7 +17,17 @@ public partial class Admin_AdminMasterPage : System.Web.UI.MasterPage
         topbtn1.Text = "修改密码";
         topbtn2.Text = "退出";
 
-        if (Directory.GetFiles(Server.MapPath("../") + "\\loginimages\\头像\\" + Session["UserID"]).Length == 0)//该文件夹为空
+        if (!Directory.Exists(Server.MapPath("../") + "\\loginimages\\头像\\" + Session["UserID"].ToString()))//不存在文件夹
+        {
+            Directory.CreateDirectory(Server.MapPath("../") + "\\loginimages\\头像\\" + Session["UserID"].ToString());//创建该文件夹
+        }
+        else//存在文件夹
+        {
+            
+        }
+
+
+        if (Directory.GetFiles(Server.MapPath("../") + "\\loginimages\\头像\\" + Session["UserID"].ToString()).Length == 0)//该文件夹为空
         {
             //不复制了，直接用默认的
             //File.Copy(Server.MapPath(".") + "\\loginimages\\头像\\默认.png", Server.MapPath(".") + "\\loginimages\\头像\\" + Session["UserID"] + "\\默认.png");//将默认的图片复制到工号文件夹下
@@ -25,7 +35,7 @@ public partial class Admin_AdminMasterPage : System.Web.UI.MasterPage
         }
         else//文件夹有文件,不是默认的，我没有将默认的复制到这里
         {
-            DirectoryInfo di = new DirectoryInfo(Server.MapPath("../") + "\\loginimages\\头像\\" + Session["UserID"].ToString());
+            DirectoryInfo di = new DirectoryInfo(Server.MapPath("../") + "\\loginimages\\头像\\" + Session["UserID"]);
             FileInfo[] fis = di.GetFiles();//所有文件的名字
             int a = fis.Length;
             string[] FileName=new string[a];//只能这么定义数组，不然会出错

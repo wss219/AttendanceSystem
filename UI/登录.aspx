@@ -50,6 +50,7 @@
 	  #tr2td2
 	  {
 	      width:400px;
+          padding-left:-20px;
 	      }
 	 table tr td ul
 	 {
@@ -63,7 +64,7 @@
 	 h2
 	  {
 	      text-align:left;
-	      color:blue;
+	      color:black;
 	      }
 	  span
 	  {
@@ -74,6 +75,11 @@
 	     letter-spacing:20px;
 	     margin-right:-20px;
 	    }
+    .textUserID, .textUserPWD, .textCode {
+        background-color:rgba(255,255,255,0.1);
+        border:1px solid white;
+        border-radius:5px;
+    }
      #txtUserID
      {
          width:200px;
@@ -94,20 +100,22 @@
           }
      #btnlogin
      {
-         font-size:16px;
-         background-color:#ee848e;
+         font-size:18px;
+         background-color:#f06d7a;
          border:0px;
-         border-radius:3px;
+         border-radius:5px;
          letter-spacing:40px;
          padding-left:45px;
-         width:185px;
-         height:27px;
+         width:200px;
+         height:30px;
          margin:auto;
-         text-align:center;    
+         text-align:center;  
          } 
       #btnlogin:hover
       {
-          background-color:#f06d7a;
+          color:white;
+          background-color:#ee848e;
+          cursor:pointer;
           }
      #labCode
      {
@@ -116,8 +124,9 @@
      #imgCode
      {
          margin-bottom:-10px;
-         width：85px;
+         width:85px;
          height:25px;
+         cursor:pointer;
          }
        #flash
        {
@@ -125,7 +134,12 @@
            height:200px;
            }
     </style>
-   
+   <script type="text/javascript" src="loginimages/script/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+           
+        });
+    </script>
 </head>
 <body>
     
@@ -143,26 +157,26 @@
             <td id="tr2td2">
                 <ul>
                     <li>
-                        <h2><image src="loginimages/网页搭建/yhfont.png"></image></h2>
+                        <h2>用户登录：</h2>
                     </li>
                     <li>
                         <span class="span1">账号</span><span>：</span><asp:TextBox ID="txtUserID" 
-                            runat="server" AutoCompleteType="Disabled" BorderWidth="1px"></asp:TextBox>
+                            runat="server" AutoCompleteType="Disabled" BorderWidth="1px" CssClass="textUserID"></asp:TextBox>
                         
                     </li>
                     <li>
                         <span class="span1">密码</span><span>：</span><asp:TextBox ID="txtUserPWD" 
                             runat="server" TextMode="Password" AutoCompleteType="Disabled" 
-                            BorderWidth="1px"></asp:TextBox>
+                            BorderWidth="1px" CssClass="textUserPWD"></asp:TextBox>
                         
                     </li>
                     <li>
                         <span>验证码：</span><asp:TextBox ID="txtCode" runat="server" Height="21px" 
                             Width="108px" AutoCompleteType="Disabled" style="margin-left: 0px" 
-                            BorderWidth="1px"></asp:TextBox>   
+                            BorderWidth="1px" CssClass="textCode"></asp:TextBox>   
                         <asp:Image ID="imgCode" src="验证码.aspx" runat="server" alt="验证字符"  
                             onclick="this.src=this.src+'?'"/>
-               
+                       
                     </li>
                     <li id="loginbtn">
                         <asp:Button ID="btnlogin" runat="server"  Text="登录" Font-Bold="True" onclick="btnlogin_Click" />

@@ -1,31 +1,42 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="个人资料.aspx.cs" Inherits="Admin_个人资料" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <style type="text/css">
- #personmain
+   <style type="text/css">
+ #personboth
  {
      width:100%;
      height:100%;
-     margin:0 auto;
-     background-color:#e6dbfb;
+     background-image:url(../loginimages/背景图/bgimg3.jpg);
+     background-repeat:no-repeat;
+     background-size:100% 100%;
+     position:relative;
+     }
+ #personmain
+ {
+     position:absolute;
+     width:70%;
+     height:75%;
+     border-radius:20px;
+     background-color:rgba(320,250,300,0.2);
+     margin-left:250px;
+     margin-top:100px;
      font-size:20px;
      font-weight:bold;
      }
 #perleft
 {
-    width:40%;
+    width:30%;
+    height:100%;
     float:left;
     text-align:center;
-    margin-top:150px;
-    border-right:1px solid purple;
-   
+    padding-top:120px;
     }
 #perright
 {
     float:left;
-    height:200px;
+    height:100%;
     width:59%; 
-    padding-top:110px;
+    padding-left:50px;
     }
 #headimg
 {
@@ -59,15 +70,17 @@
     }
 .fileupload
 {
-    margin-left:50px;
-            margin-bottom: 0px;
+    margin-left:70px;
         }
 .divright
 {
-    width:500px;
-    height:20px;
+    width:100%;
+    height:45px;
+    border-radius:10px;
+    box-shadow:10px 10px gray;
     text-align:center;
-    margin-top:50px;
+    margin-top:110px;
+    background-color:rgba(400,350,500,0.6);
     }
 .font
 {
@@ -83,6 +96,7 @@
     margin-left:120px;
     }
 </style>
+<div id="personboth">
 <div id="personmain">
   <div id="perleft">
     <div id="headimg">
@@ -116,14 +130,7 @@
         <div class="font">教师权限：</div>
         <div class="csslabel"><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></div>
     </div>
-    <div class="divright">
-        <div class="font">教师性别：</div>
-        <div class="csslabel"><asp:Label ID="Label4" runat="server" Text="Label"></asp:Label></div>
-    </div>
-    <div class="divright">
-        <div class="font">所属部门：</div>
-        <div class="csslabel"><asp:Label ID="Label5" runat="server" Text="Label"></asp:Label></div>
-    </div>
   </div>
+</div>
 </div>
 </asp:Content>

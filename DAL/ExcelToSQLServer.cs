@@ -133,8 +133,7 @@ namespace DAL
 
        public static void ReadExcelToDataSet(string fileName, string strSQL)
        {
-           //string str1 = @"Provider = Microsoft.Jet.OLEDB.4.0;Data Source = '"+fileName+"';Extended Properties=Excel 8.0";
-           string str1 = @"Provider = Microsoft.ACE.OLEDB.12.0;Data Source = '" + fileName + "';Extended Properties='Excel 8.0;HDR=NO;IMEX=1';";
+           string str1 = @"Provider = Microsoft.Jet.OLEDB.4.0;Data Source = '"+fileName+"';Extended Properties=Excel 8.0";
            OleDbConnection conn = new OleDbConnection(str1);
            conn.Open();
 
@@ -207,9 +206,9 @@ namespace DAL
            strSQL = "select * from [Sheet1$]";
            ReadExcelToDataSet(fileName, strSQL);
 
-           if (CheckExcelTableCalendar())
+           if (CheckExcelTableTeachers())
            {
-               //
+               TeachersToSQLServer(identity);
                return "文件导入成功";
            }
            else

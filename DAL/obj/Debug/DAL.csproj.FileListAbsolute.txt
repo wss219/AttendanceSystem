@@ -35,3 +35,29 @@ C:\Users\仗己丶\Desktop\考勤系统 - 副本\DAL\bin\Debug\DAL.pdb
 C:\Users\仗己丶\Desktop\考勤系统 - 副本\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\仗己丶\Desktop\考勤系统 - 副本\DAL\obj\Debug\DAL.dll
 C:\Users\仗己丶\Desktop\考勤系统 - 副本\DAL\obj\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统-正在做拆分\DAL\bin\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统-正在做拆分\DAL\bin\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统-正在做拆分\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\仗己丶\Desktop\考勤系统-正在做拆分\DAL\obj\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统-正在做拆分\DAL\obj\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统-在做拆分\DAL\bin\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统-在做拆分\DAL\bin\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统-在做拆分\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\仗己丶\Desktop\考勤系统-在做拆分\DAL\obj\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统-在做拆分\DAL\obj\Debug\DAL.pdb
+C:\Users\李岩\Desktop\考勤系统-演示\DAL\bin\Debug\DAL.dll
+C:\Users\李岩\Desktop\考勤系统-演示\DAL\bin\Debug\DAL.pdb
+C:\Users\李岩\Desktop\考勤系统-演示\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\李岩\Desktop\考勤系统-演示\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\李岩\Desktop\考勤系统-演示\DAL\obj\Debug\DAL.dll
+C:\Users\李岩\Desktop\考勤系统-演示\DAL\obj\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统-演示\DAL\bin\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统-演示\DAL\bin\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统-演示\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\仗己丶\Desktop\考勤系统-演示\DAL\obj\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统-演示\DAL\obj\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统-完成！！！\DAL\bin\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统-完成！！！\DAL\bin\Debug\DAL.pdb
+C:\Users\仗己丶\Desktop\考勤系统-完成！！！\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\仗己丶\Desktop\考勤系统-完成！！！\DAL\obj\Debug\DAL.dll
+C:\Users\仗己丶\Desktop\考勤系统-完成！！！\DAL\obj\Debug\DAL.pdb

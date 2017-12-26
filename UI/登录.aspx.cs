@@ -21,17 +21,9 @@ public partial class _Default : System.Web.UI.Page
         {
             /*txtCode.Visible = false;//验证码和文本框先不显示
             labCode.Visible = false;
-            imgCode.Visible = false;*/     //如果想点一下登录再显示验证码，去掉注释就好
+            imgCode.Visible = false;*/
+            //如果想点一下登录再显示验证码，去掉注释就好
             lblMessage.Visible = false;
-
-            /*Session["UserName"] = "";
-            Session["UserID"] = "";
-            Session["CurrentWeek"] = "";
-            Session["CurrentCourse"] = "";
-            Session["Week"] = "";
-            Session["Time"] = "";
-            Session["WeekRange"] = "";
-            Session["Role"] = "";*/
         }
         txtUserPWD.Attributes.Add("value", txtUserPWD.Text);//不随着点击确定而清空密码框，提高用户体验
     }
@@ -63,7 +55,7 @@ public partial class _Default : System.Web.UI.Page
                     if (txtCode.Text == "")//验证码为空
                     {
                         lblMessage.Visible = true;
-                        lblMessage.Text = "刘帅儿子！";                        
+                        lblMessage.Text = "验证码为空！";
                     }
                     else//验证码不为空
                     {
@@ -87,57 +79,55 @@ public partial class _Default : System.Web.UI.Page
                                 DateTime LastTime = Convert.ToDateTime(dt.Rows[0]["Time"]);
                                 DateTime CurrentTime = Convert.ToDateTime(System.DateTime.Now.ToString());
                                 TimeSpan ShiJian = CurrentTime - LastTime;
-                               
-                                    if (Convert.ToInt32(ShiJian.TotalMinutes) > 15)//大于15分钟
+
+                                if (Convert.ToInt32(ShiJian.TotalMinutes) > 15)//大于15分钟
+                                {
+                                    AddSQLStringToDAL.Update("update TabTeachers set Count = 5 where UserID = '" + txtUserID.Text + "'");//次数还原为5
+
+                                    if (FormsAuthentication.HashPasswordForStoringInConfigFile(txtUserPWD.Text, "MD5").ToString() == dt.Rows[0]["UserPWD"].ToString())//密码正确
                                     {
-                                        AddSQLStringToDAL.Update("update TabTeachers set Count = 5 where UserID = '" + txtUserID.Text + "'");//次数还原为5
-                                        
-                                        if (FormsAuthentication.HashPasswordForStoringInConfigFile(txtUserPWD.Text, "MD5").ToString()== dt.Rows[0]["UserPWD"].ToString())//密码正确
+                                        AddSQLStringToDAL.Update("update TabTeachers set Count = 5,Time = '" + CurrentTime.ToString("yyyy-MM-dd HH:mm:ss") + "' where UserID = '" + txtUserID.Text + "'");
+                                        CurrentWeek();
+                                        lblMessage.Visible = true;
+                                        lblMessage.Text = "登陆成功！";
+                                        Loginaspx(dt);
+                                    }
+                                    else//密码错误
+                                    {
+                                        AddSQLStringToDAL.Update("update TabTeachers set Count = 4,Time = '" + CurrentTime.ToString("yyyy-MM-dd HH:mm:ss") + "' where UserID = '" + txtUserID.Text + "'");
+                                        lblMessage.Visible = true;
+                                        txtCode.Text = "";
+                                        txtUserPWD.Text = "";
+                                        lblMessage.Text = "密码错误！您还剩4次尝试机会";
+                                    }
+                                }
+                                else//小于等于15分钟
+                                {
+                                    if (Convert.ToInt32(dt.Rows[0]["Count"]) > 1)//次数大于0
+                                    {
+                                        if (dt.Rows[0]["UserPWD"].ToString() == FormsAuthentication.HashPasswordForStoringInConfigFile(txtUserPWD.Text, "MD5").ToString())//密码正确
                                         {
-                                            AddSQLStringToDAL.Update("update TabTeachers set Count = 5,Time = '" + CurrentTime.ToString("yyyy-MM-dd HH:mm:ss") + "' where UserID = '" + txtUserID.Text + "'");
+                                            AddSQLStringToDAL.Update("update TabTeachers set Count = 5,Time = '" + CurrentTime.ToString("yyyy-MM-dd HH:mm:ss") + "' where UserID = '" + txtUserID.Text + "'");//次数还原为5，时间改为这次的
                                             CurrentWeek();
                                             lblMessage.Visible = true;
                                             lblMessage.Text = "登陆成功！";
-                                            HeadImage();
                                             Loginaspx(dt);
                                         }
-                                        else//密码错误
+                                        else//密码不正确
                                         {
-                                            AddSQLStringToDAL.Update("update TabTeachers set Count = 4,Time = '" + CurrentTime.ToString("yyyy-MM-dd HH:mm:ss") + "' where UserID = '" + txtUserID.Text + "'");
+                                            AddSQLStringToDAL.Update("update Tabteachers set Count = '" + (Convert.ToInt32(dt.Rows[0]["Count"]) - 1).ToString() + "',Time = '" + CurrentTime.ToString("yyyy-MM-dd HH:mm:ss") + "' where UserID = '" + txtUserID.Text + "'");//次数-1，时间改为这次的
                                             lblMessage.Visible = true;
-                                            txtCode.Text = "";
                                             txtUserPWD.Text = "";
-                                            lblMessage.Text = "密码错误！您还剩4次尝试机会"; 
+                                            txtCode.Text = "";
+                                            lblMessage.Text = "密码错误！您还有" + (Convert.ToInt32(dt.Rows[0]["Count"]) - 1).ToString() + "次尝试机会";
                                         }
                                     }
-                                    else//小于等于15分钟
+                                    else//次数小于等于0
                                     {
-                                        if (Convert.ToInt32(dt.Rows[0]["Count"]) > 1)//次数大于0
-                                        {
-                                            if (dt.Rows[0]["UserPWD"].ToString() == FormsAuthentication.HashPasswordForStoringInConfigFile(txtUserPWD.Text, "MD5").ToString())//密码正确
-                                            {
-                                                AddSQLStringToDAL.Update("update TabTeachers set Count = 5,Time = '" + CurrentTime.ToString("yyyy-MM-dd HH:mm:ss") + "' where UserID = '" + txtUserID.Text + "'");//次数还原为5，时间改为这次的
-                                                CurrentWeek();
-                                                lblMessage.Visible = true;
-                                                lblMessage.Text = "登陆成功！";
-                                                HeadImage();
-                                                Loginaspx(dt);
-                                            }
-                                            else//密码不正确
-                                            {
-                                                AddSQLStringToDAL.Update("update Tabteachers set Count = '" + (Convert.ToInt32(dt.Rows[0]["Count"]) - 1).ToString() + "',Time = '" + CurrentTime.ToString("yyyy-MM-dd HH:mm:ss") + "' where UserID = '" + txtUserID.Text + "'");//次数-1，时间改为这次的
-                                                lblMessage.Visible = true;
-                                                txtUserPWD.Text = "";
-                                                txtCode.Text = "";
-                                                lblMessage.Text = "密码错误！您还有" + (Convert.ToInt32(dt.Rows[0]["Count"]) - 1).ToString() + "次尝试机会";
-                                            }
-                                        }
-                                        else//次数小于等于0
-                                        {
-                                            lblMessage.Visible = true;
-                                            lblMessage.Text = "请" + (15 - Convert.ToInt32(ShiJian.TotalMinutes)) + "分钟后重试";
-                                        }
-                                    }                              
+                                        lblMessage.Visible = true;
+                                        lblMessage.Text = "请" + (15 - Convert.ToInt32(ShiJian.TotalMinutes)) + "分钟后重试";
+                                    }
+                                }
                             }
                             else//账户不存在
                             {
@@ -165,36 +155,23 @@ public partial class _Default : System.Web.UI.Page
             {
                 case "1":
                     Session["Role"] = "系统管理员";
-                    Response.Redirect("Admin\\管理员首页.aspx");
+                    Response.Redirect("Admin\\GetMessage.aspx");
                     break;
                 case "2":
                     Session["Role"] = "院系领导";
-                    Response.Redirect("Leader\\院领导首页.aspx");
+                    Response.Redirect("Leader\\GetMessage.aspx");
                     break;
                 case "3":
                     Session["Role"] = "辅导员";
-                    Response.Redirect("Secretary\\辅导员首页.aspx");
+                    Response.Redirect("Secretary\\GetMessage.aspx");
                     break;
                 case "4":
                     Session["Role"] = "教师";
-                    Response.Redirect("Teacher\\教师首页.aspx");
+                    Response.Redirect("Teacher\\GetMessage.aspx");
                     break;
                 default:
                     break;
-            }    
-        }
-    }
-
-
-    public void HeadImage()//根据工号获取头像
-    {
-        if (Directory.Exists(Server.MapPath(".") + "\\loginimages\\头像\\" + Session["UserID"]))//存在文件夹
-        {
-            
-        } 
-        else//不存在文件夹
-        {
-           Directory.CreateDirectory(Server.MapPath(".")+"\\loginimages\\头像\\"+Session["UserID"].ToString());//创建该文件夹
+            }
         }
     }
 

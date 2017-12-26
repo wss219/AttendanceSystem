@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title></title>
-    <style type="text/css">
+      <style type="text/css">
        body
         {
             margin:0px;
@@ -14,11 +14,12 @@
         #main
         {
             width:100%;
-            background-color:#eaedef;
+            background-color:#686868;
         }
         .btn
         {
-            cursor:pointer;}  /*将btn变成小手样式*/
+            cursor:pointer;
+            }
          #topbtn2:hover,#topbtn1:hover
         {
             color:Red;
@@ -39,11 +40,12 @@
         #topbtn2,#topbtn1,#toplbl3,#toplbl2,#toplbl1,#lblcount
         {
             float:right;
+            padding:0;
             font-size:16px;
             font-weight:bold;
             margin-top:10px;
+            margin-left:10px;
             color:White;
-            margin-left: 11px;
         }
         #topbtn2,#topbtn1
         {   
@@ -74,6 +76,7 @@
             float:left;
             min-width:160px;
             border:1px solid black;
+            border-right:1px solid #f5d1d1;
             background-image:url(../loginimages/网页搭建/left2.jpg);
             background-size:100% 100%;
             }
@@ -82,7 +85,7 @@
             margin:0 auto;
             width:100%;
             height:90px;
-            background-color:rgba(0,0,0,0.4);
+            background-color:rgba(0,0,0,0.6);
             text-align:center;
             }
         #lefttop #ImageButton1
@@ -96,7 +99,7 @@
         {
             width:100%;
             height:742px;
-            background-color:rgba(0,0,0,0.6);
+            background-color:rgba(0,0,0,0.8);
             }
         #right
         {
@@ -107,19 +110,24 @@
             margin-right:5px;
             min-width:500px;
             position:relative;
-            border:1px solid #7a7a7a;
+            border:1px solid white;
             }
         #rightmiddle
         {
             position:absolute;
             width:99%;
             height:25px;
+            background-color:rgba(0,0,0,0.2);
+            color:white;
             margin-top:5px;
             margin-left:6px;
-            border:1px solid #7a7a7a;
+            border:1px solid white;
             }
         #rightbottom
         {
+            background-image:url(../loginimages/背景图/bgimg4.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
             position:absolute;
             width:99%;
             height:794px;
@@ -127,7 +135,7 @@
             background-color:white;
             margin-top:37px;
             margin-left:6px;
-            border:1px solid #7a7a7a;
+            border:1px solid white;
             }
         #modifypwd,#insert,#delete,#select,#modify
         {
@@ -135,6 +143,7 @@
             background-color:transparent;
             font-size:16px;
             font-weight:bold;
+            color:white;
             }
         #foot
         {
@@ -166,7 +175,6 @@ dl dd div{
 	margin-left:8px;
 	margin-right:8px;
 	border-bottom:1px solid #f0eef0;
-    background-color:rgba(0,0,0,0.17);
 	}
 dl dt:hover,dl dd div:hover{
 	background-color:#cdad98;}
@@ -182,13 +190,16 @@ dl dt span
 	}
 dl dd
 {
-    background-image:url(../loginimages/网页搭建/left1.jpg);
-    background-size:100% 100%;
-	margin-left:0px;}
+	margin-left:0px;
+    background-color:rgba(255,255,255,0.75);
+}
 dl dd div a{
+    display:block;
+    width:100%;
+    height:100%;
 	text-decoration:none;
-	color:#eae9e9;
-	margin-left:40px;
+	color:black;
+	margin-left:50px;
     }
 .imgleft1
 {
@@ -228,13 +239,13 @@ dl dd div a{
                $("dt[id!='daohang']").each(function (index) {
                    $("dt[id!='daohang']:eq(" + index + ")").click(function () {
                        if ($("dt[id!='daohang']:eq(" + index + ")").next().is(":hidden")) {
-                           $("dt[id!='daohang']:eq(" + index + ")").next().slideDown(600);
+                           $("dt[id!='daohang']:eq(" + index + ")").next().slideDown(800);
                            $("dt[id!='daohang']:eq(" + index + ") .parent-img").attr("src", "../loginimages/小图标/open.png");
-                           $("dt[id!='daohang']:not(:eq(" + index + "))").next().slideUp(600);
+                           $("dt[id!='daohang']:not(:eq(" + index + "))").next().slideUp(800);
                            $("dt[id!='daohang']:not(:eq(" + index + ")) .parent-img").attr("src", "../loginimages/小图标/off.png");
                        }
                        else {
-                           $("dt[id!='daohang']:eq(" + index + ")").next().slideUp(600);
+                           $("dt[id!='daohang']:eq(" + index + ")").next().slideUp(800);
                            $("dt[id!='daohang']:eq(" + index + ") .parent-img").attr("src", "../loginimages/小图标/off.png");
                        }
                    });
@@ -259,12 +270,12 @@ dl dd div a{
                 onclick="topbtn2_Click1"/>
             <asp:Button ID="topbtn1" runat="server" Text="btn1" CssClass="btn" Font-Underline="True"
                 onclick="topbtn1_Click1" />
-            <asp:Label ID="toplbl3" runat="server" Text="Label" Width="97px" Height="21px"></asp:Label>
-            <asp:Label ID="toplbl2" runat="server" Text="Label" Width="53px" Height="16px"></asp:Label>
-            <asp:Label ID="toplbl1" runat="server" Text="欢迎" Width="40px"></asp:Label>
+            <asp:Label ID="toplbl3" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="toplbl2" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="toplbl1" runat="server" Text="欢迎"></asp:Label>
             <asp:Label ID="lblcount" runat="server" Text="第几周"></asp:Label>
         </div>
-            <marquee direction="right" scrollamount="6" onMouseOver=this.stop() onMouseOut=this.start()><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></marquee>
+            <marquee direction="right" scrollamount="6" onMouseOver=this.stop() onMouseOut=this.start()><asp:Label ID="Label1" runat="server" Text="啊啊啊啊啊"></asp:Label></marquee>
         <div id="content">
            
         <div id="left">
@@ -278,14 +289,14 @@ dl dd div a{
         <dd>
         	<div><img class="childimgleft" src="../loginimages/小图标/users.png" /><a href="用户管理.aspx">用户管理</a></div>
             <div><img class="childimgleft" src="../loginimages/小图标/usersplus.png" /><a href="新增用户.aspx">新增用户</a></div>
-            <div><img class="childimgleft" src="../loginimages/小图标/note.png" /><a href="发布通知.aspx">发布通知</a></div>
+            <div><img class="childimgleft" src="../loginimages/小图标/note.png" /><a  href="SendMessage.aspx">发布通知</a></div>
         </dd>
         
         <dt><img class="imgleft" src="../loginimages/小图标/guanli.png" /><span >数据管理</span><img class="parent-img" src="../loginimages/小图标/off.png" /></dt>
         <dd>
         	<div><img class="childimgleft" src="../loginimages/小图标/daoru.png" /><a  href="导入数据.aspx">导入数据</a></div>
-            <div><img class="childimgleft" src="../loginimages/小图标/daochu.png" /><a href="导出数据.aspx">导出数据</a></div>
-            <div><img class="childimgleft" src="../loginimages/小图标/dataclear.png" /><a href="清空数据.aspx">清空数据</a></div>
+            <div><img class="childimgleft" src="../loginimages/小图标/daochu.png" /><a>导出数据</a></div>
+            <div><img class="childimgleft" src="../loginimages/小图标/dataclear.png" /><a>清空数据</a></div>
         </dd>
         
         <dt><img class="imgleft" src="../loginimages/小图标/yidong.png" /><span>异动处理</span><img class="parent-img" src="../loginimages/小图标/off.png" /></dt>
@@ -298,9 +309,9 @@ dl dd div a{
         
         <dt><img class="imgleft" src="../loginimages/小图标/analysis.png"/><span>数据分析</span><img class="parent-img" src="../loginimages/小图标/off.png" /></dt>
         <dd>
-        	<div><img class="childimgleft" src="../loginimages/小图标/data5.png" /><a>学生数据汇总</a></div>
+        	<div><img class="childimgleft" src="../loginimages/小图标/data5.png" /><a href="DepartmentAnalysis.aspx">学生数据汇总</a></div>
             <div><img class="childimgleft" src="../loginimages/小图标/data5.png" /><a>教师数据汇总</a></div>
-            <div><img class="childimgleft" src="../loginimages/小图标/data4.png" /><a>学生数据分析图</a></div>
+            <div><img class="childimgleft" src="../loginimages/小图标/data4.png" /><a  href="DepartmentEachCompare.aspx">学生数据分析图</a></div>
             <div><img class="childimgleft" src="../loginimages/小图标/data4.png" /><a>教师数据分析图</a></div>
         </dd>
         
@@ -312,7 +323,7 @@ dl dd div a{
         
         <dt><img class="imgleft" src="../loginimages/小图标/shangbao.png" /><span>信息上报</span><img class="parent-img" src="../loginimages/小图标/off.png" /></dt>
         <dd>
-        	<div><img class="childimgleft" src="../loginimages/小图标/kaoqin.png" /><a>录入考勤</a></div>
+        	<div><img class="childimgleft" src="../loginimages/小图标/kaoqin.png" /><a href="录入考勤.aspx">录入考勤</a></div>
             <div><img class="childimgleft" src="../loginimages/小图标/history.png" /><a>历史记录</a></div>
             <div><img class="childimgleft" src="../loginimages/小图标/achievement.png" /><a>教师成果</a></div>
         </dd>
@@ -331,9 +342,9 @@ dl dd div a{
                
                 </div>
                     
-                <div id="rightbottom">
+                <div id="rightbottom">    
                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" Visible="True">  
-                   
+                
                 </asp:ContentPlaceHolder>
                 </div>
 

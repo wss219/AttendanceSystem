@@ -14,7 +14,7 @@ namespace BLL
            string fileextend = "";
            try
            {
-               if (fileName != string.Empty)
+               if (fileName != string.Empty)// 不为空
                {
                    filesize = fileName.Length;
                    if (filesize == 0)
@@ -26,14 +26,14 @@ namespace BLL
                    {
                        return "选择的文件格式不正确，只能导入Excel文件！";
                    }
-                   return ToSQLServer(fileName,identity);
+                   return ToSQLServer(fileName, identity);
                }
                else
                {
                    return "文件为空，请重新选择！";
                }
            }
-           catch(Exception ex)
+           catch (Exception ex)
            {
                throw ex;
            }
@@ -45,7 +45,7 @@ namespace BLL
            {
                return DAL.ExcelToSQLServer.ReadTeachersExcel(fileName, identity);
            }
-           else if (identity == "TabCalendar")
+           else if (identity == "TabCalendar")//校历
            {
                return DAL.ExcelToSQLServer.ReadCalendarExcel(fileName, identity); 
            }

@@ -38,24 +38,30 @@ namespace DAL
            }
        }
 
-       public static void SQLBulkCopyTeachers(DataTable dt, string BiaoMing)//全校教师信息
+       public static void SQLBulkCopyAllCourses(DataTable dt)
        {
            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString))
            {
                conn.Open();
                using (SqlBulkCopy bulkcopy = new SqlBulkCopy(conn))
                {
-                   bulkcopy.DestinationTableName = BiaoMing;
-                   bulkcopy.ColumnMappings.Add("部门", "承担单位");
-                   bulkcopy.ColumnMappings.Add("工号", "任课教师");
-                   bulkcopy.ColumnMappings.Add("密码", "[上课时间/地点]");
+                   bulkcopy.DestinationTableName = "TabAllCourses";
+                   bulkcopy.ColumnMappings.Add("承担单位", "承担单位");
+                   bulkcopy.ColumnMappings.Add("上课时间/地点", "[上课时间/地点]");
+                   //bulkcopy.ColumnMappings.Add("教师姓名", "教师姓名");
+                   //bulkcopy.ColumnMappings.Add("教师工号", "教师工号");
                    bulkcopy.ColumnMappings.Add("课程", "课程");
-                   bulkcopy.ColumnMappings.Add("姓名", "所属部门");
-                   bulkcopy.ColumnMappings.Add("性别", "学分");
-                   bulkcopy.ColumnMappings.Add("权限", "总学时");
-                   bulkcopy.ColumnMappings.Add("学历", "上课班级名称");
-                   bulkcopy.ColumnMappings.Add("学位", "[院(系)/部]");
-                   bulkcopy.ColumnMappings.Add("职称", "学号");
+                   bulkcopy.ColumnMappings.Add("所属部门", "所属部门");
+                   bulkcopy.ColumnMappings.Add("学分", "学分");
+                   bulkcopy.ColumnMappings.Add("总学时", "总学时");
+                   bulkcopy.ColumnMappings.Add("上课班级名称", "上课班级名称");
+                   bulkcopy.ColumnMappings.Add("院(系)/部", "[院(系)/部]");
+                   bulkcopy.ColumnMappings.Add("学号", "学号");
+                   bulkcopy.ColumnMappings.Add("姓名", "姓名");
+                   bulkcopy.ColumnMappings.Add("行政班级", "行政班级");
+                   bulkcopy.ColumnMappings.Add("性别", "性别");
+                   bulkcopy.ColumnMappings.Add("课程类别1", "课程类别1");
+                   bulkcopy.ColumnMappings.Add("课程类别2", "课程类别2");
                    bulkcopy.WriteToServer(dt);
                }
            }

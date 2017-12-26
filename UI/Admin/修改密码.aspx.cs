@@ -14,7 +14,7 @@ public partial class Admin_修改密码 : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            if (Session["Role"] != null)
+            if (Session["Role"].ToString() != "")
             {
                 txtUserID.Text = Session["UserID"].ToString();
                 txtUserName.Text = Session["UserName"].ToString();
@@ -27,30 +27,23 @@ public partial class Admin_修改密码 : System.Web.UI.Page
     }
     protected void btnOK_Click(object sender, EventArgs e)
     {
-        if (!IsPostBack)
+        if (txtUserPWD.Text == "")
         {
-
+            txtUserEnterPWD.Text = "";
+            lblMessage.Text = "修改失败！密码不能为空！";
         }
         else
         {
-            if (txtUserPWD.Text == "")
+            if (txtUserPWD.Text != txtUserEnterPWD.Text)
             {
+                txtUserPWD.Text = "";
                 txtUserEnterPWD.Text = "";
-                lblMessage.Text = "修改失败！密码不能为空！";
+                lblMessage.Text = "修改失败！两次密码不一致！";
             }
             else
             {
-                if (txtUserPWD.Text != txtUserEnterPWD.Text)
-                {
-                    txtUserPWD.Text = "";
-                    txtUserEnterPWD.Text = "";
-                    lblMessage.Text = "修改失败！两次密码不一致！";
-                }
-                else
-                {
-                    AddSQLStringToDAL.Update("TabTeachers", "UserPWD",FormsAuthentication.HashPasswordForStoringInConfigFile(txtUserPWD.Text, "MD5").ToString() , "UserID", txtUserID.Text);
-                    lblMessage.Text = "修改成功!";
-                }
+                AddSQLStringToDAL.Update("TabTeachers", "UserPWD",FormsAuthentication.HashPasswordForStoringInConfigFile(txtUserPWD.Text, "MD5").ToString() , "UserID", txtUserID.Text);
+                lblMessage.Text = "修改成功!";
             }
         }
     }

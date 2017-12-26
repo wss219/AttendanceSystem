@@ -12,7 +12,7 @@ public partial class Admin_个人资料 : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            if (Session["Role"].ToString() == "系统管理员")
+            if (Session["Role"].ToString() != "")
             {
                 Label1.Text = Session["UserID"].ToString();
                 label2.Text = Session["UserName"].ToString();
@@ -20,9 +20,9 @@ public partial class Admin_个人资料 : System.Web.UI.Page
                 /*Label4.Text = "男";
                 Label5.Text = "商务外语系";*/
                 btnImage.ImageUrl = Session["imageURL"].ToString();
-                FileUpload1.Visible = false;
-                btnOK.Visible = false;
-                btnCancel.Visible = false;
+                FileUpload1.Visible = true;
+                btnOK.Visible = true;
+                btnCancel.Visible = true;
             }
             else
             {

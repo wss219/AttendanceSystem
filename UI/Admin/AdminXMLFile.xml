@@ -35,7 +35,7 @@
   </siteMapNode>
 
   <siteMapNode url="" title="信息上报" description="">
-    <siteMapSubNode url="~/Admin/AdminSubmitAttendance.aspx" title="录入考勤" description=""/>
+    <siteMapSubNode url="~/Admin/录入考勤.aspx" title="录入考勤" description=""/>
     <siteMapSubNode url="~/Admin/AdminSubmitAttendance.aspx" title="历史记录" description=""/>
     <siteMapSubNode url="~/Admin/AdminSubmitAttendance.aspx" title="教师成果" description=""/>
   </siteMapNode>

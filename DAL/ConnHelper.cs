@@ -102,6 +102,8 @@ namespace DAL
            conn.Close();
        }
 
+
+
        /*public static DataTable GetDataTable1(string strsql)
        {
            string ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
