@@ -28,6 +28,9 @@
             line-height:30px;
             background-color:rgba(255,255,255,0.4);
         }
+        #tr3 {
+            
+        }
         .btnOK {
             width:120px;
             height:30px;
